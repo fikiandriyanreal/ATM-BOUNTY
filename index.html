@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Bank Account Management</title>
+</head>
+
+<body>
+    <h1>Bank Account Management</h1>
+    <div class="account-info">
+        <h2>Account Information</h2>
+        <p>Account Holder: <span id="account-holder">Fiki Andriyan</span></p>
+        <p>Account Type: <span id="account-type">Savings</span></p>
+        <p>Balance: $<span id="balance">1000.00</span></p>
+    </div>
+    <div class="actions">
+        <h2>Actions</h2>
+        <label for="action-dropdown">Select Action:</label>
+        <select id="action-dropdown">
+            <option value="deposit">Deposit</option>
+            <option value="withdraw">Withdraw</option>
+            <option value="check-balance">Check Balance</option>
+        </select>
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" placeholder="Enter amount">
+        <button id="submit-button">Submit</button>
+        <p id="message" class="message"></p>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
